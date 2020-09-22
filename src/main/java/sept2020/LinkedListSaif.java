@@ -9,6 +9,16 @@ public class LinkedListSaif extends AbstractList {
   }
 
   @Override
+  public void addToFront(int val) {
+
+  }
+
+  @Override
+  public int get(int index) {
+    return 0;
+  }
+
+  @Override
   public void delete(int val) {
 
   }
