@@ -1,5 +1,4 @@
 import org.junit.jupiter.api.*;
-import sept2020.Sample;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
