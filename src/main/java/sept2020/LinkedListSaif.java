@@ -24,7 +24,7 @@ public class LinkedListSaif extends AbstractList {
   }
 
   @Override
-  public boolean search(int val) {
+  public boolean contains(int val) {
     return false;
   }
 
