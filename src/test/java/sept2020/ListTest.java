@@ -63,10 +63,10 @@ public class ListTest {
     list.append(2);
     list.append(3);
 
-    list.deleteAt(2);
+    list.deleteAt(1);
     assertEquals(2, list.size());
     assertEquals(1, list.get(0));
-    assertEquals(3, list.get(2));
+    assertEquals(3, list.get(1));
   }
 
   @Test
