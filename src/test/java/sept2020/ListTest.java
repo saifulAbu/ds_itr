@@ -139,6 +139,6 @@ public class ListTest {
     list.append(3);
     list.append(2);
 
-    assertEquals(-1, list.contains(7));
+    assertEquals(-1, list.search(7));
   }
 }

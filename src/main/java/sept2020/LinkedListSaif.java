@@ -88,12 +88,27 @@ public class LinkedListSaif extends AbstractList {
 
   @Override
   public int search(int val) {
-    return 0;
+    int resIndex = 0;
+    Node front;
+    front = head.next;
+    boolean found = false;
+    while(front != null) {
+      if(front.val == val) {
+        found = true;
+        break;
+      }
+      front = front.next;
+      resIndex++;
+    }
+    if(found == false) {
+      return -1;
+    }
+    return resIndex;
   }
 
   @Override
   public boolean contains(int val) {
-    return false;
+    return ((search(val) == -1)?  false : true);
   }
 
   @Override
