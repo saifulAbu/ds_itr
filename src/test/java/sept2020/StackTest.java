@@ -1,6 +1,6 @@
 package sept2020;
 
-import contracts.AbstractQueue;
+import contracts.AbstractStack;
 import org.junit.Rule;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -8,30 +8,30 @@ import org.junit.rules.ExpectedException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class QueueTest {
-  AbstractQueue queue;
+public class StackTest {
+  AbstractStack stack;
   @Rule
   public ExpectedException exceptionRule = ExpectedException.none();
 
   @BeforeEach
   public void initBeforeEachTest() {
-    queue = new QueueSaif();
+    stack = new StackSaif();
   }
 
   @Test
   public void testPushPop() {
-    queue.push(1);
-    queue.push(2);
-    queue.push(3);
+    stack.push(1);
+    stack.push(2);
+    stack.push(3);
 
-    assertEquals(3, queue.size());
+    assertEquals(3, stack.size());
 
-    assertEquals(3, queue.pop());
-    assertEquals(2, queue.size());
-    assertEquals(2, queue.pop());
-    assertEquals(1, queue.size());
-    assertEquals(1, queue.pop());
-    assertEquals(0, queue.size());
+    assertEquals(3, stack.pop());
+    assertEquals(2, stack.size());
+    assertEquals(2, stack.pop());
+    assertEquals(1, stack.size());
+    assertEquals(1, stack.pop());
+    assertEquals(0, stack.size());
   }
 
   @Test

@@ -1,8 +1,8 @@
 package sept2020;
 
-import contracts.AbstractQueue;
+import contracts.AbstractStack;
 
-public class QueueSaif extends AbstractQueue {
+public class StackSaif extends AbstractStack {
   @Override
   public void push(int data) {
 
